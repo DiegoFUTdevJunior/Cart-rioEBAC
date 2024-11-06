@@ -158,6 +158,7 @@ int main() //a função main é a responsável por armazenar o menu, pois é desse po
 		printf("\t1-Registrar nomes \n\n");
 		printf("\t2-Consultar nomes \n\n");
 		printf("\t3-Deletar nomes \n\n");
+		printf("\t4-Sair do sistema \n");
 		printf("Opção:"); //fim do menu
 	
 		scanf("%d", &opcao); //armazenando a escolha do usuário
@@ -176,6 +177,11 @@ int main() //a função main é a responsável por armazenar o menu, pois é desse po
 			
 			case 3: //fim da seleção
 			deletar();
+			break;
+			
+			case 4:
+			printf("Obrigado por utilizar o sistema!\n");
+			return 0;
 			break;
 			
 			default: 
